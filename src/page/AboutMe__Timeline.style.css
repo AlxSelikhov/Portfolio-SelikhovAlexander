@@ -2,6 +2,12 @@
   align-self: stretch;
   position: relative;
   font-weight: 600;
+  margin: 100px 0 60px 0;
+}
+.heading-text-container6 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
 }
 .timelinesection-text-container {
   align-self: stretch;
@@ -411,3 +417,8 @@
   margin: 100px 0;
 }
 
+@media (max-width: 1200px) {
+  .timelinesection {
+    display: none;
+  }
+}

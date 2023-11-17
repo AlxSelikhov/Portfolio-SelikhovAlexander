@@ -24,15 +24,30 @@ align-items: flex-start;
 justify-content: flex-start;
 padding: 12px;
 `;
-const ButtonsContainer2 = styled.div`display: flex;
+const ButtonsContainer2 = styled.div`
+display: flex;
 flex-direction: row;
 align-items: flex-start;
 justify-content: flex-start;
 z-index: 1;
+
+@media (max-width:1200px){
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
 `;
-const TextButton3 = styled.div`position: relative;
+const TextButton3 = styled.div`
+position: relative;
 line-height: 150%;
 font-weight: 500;
+
+@media (max-width:768px){
+font-size: 14px;
+}
 `;
 const ButtonsContainer3 = styled.div`margin: 0 !important;
 position: absolute;
@@ -46,6 +61,22 @@ gap: var(--gap-11xl);
 z-index: 2;
 font-size: var(--font-size-lg);
 color: var(--grey-20);
+
+@media (max-width:1200px){
+top: 0;
+left: 0;
+position: relative;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 30px;
+text-align: left;
+// font-size: var(--font-size-lg);
+color: var(--grey-20);
+font-family: var(--font-manrope);
+}
 `;
 const Container2 = styled.div`align-self: stretch;
 display: flex;
@@ -53,6 +84,16 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 position: relative;
+
+@media (max-width:1200px){
+align-self: stretch;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+gap: 25px;
+// position: static;
+}
 `;
 const Icon2 = styled.img`position: relative;
 width: 24px;
@@ -83,6 +124,10 @@ padding: 24px 32px;
 gap: 40px;
 font-size: var(--font-size-lg);
 color: var(--grey-30);
+
+@media (max-width:1200px){
+display: none;
+}
 `;
 const Text5 = styled.div`position: relative;
 font-size: 16px;
@@ -104,6 +149,39 @@ text-align: left;
 font-size: 24px;
 color: var(--purple-50);
 font-family: var(--font-manrope);
+
+@media (max-width:1200px){
+    position: relative;
+    border-top: 1px solid var(--peach-85);
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 128px;
+    gap: var(--gap-11xl);
+    text-align: left;
+    font-size: 24px;
+    color: var(--purple-50);
+    font-family: var(--font-manrope);
+}
+@media (max-width:768px){
+    position: relative;
+    border-top: 1px solid var(--peach-85);
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 38px;
+    gap: var(--gap-11xl);
+    text-align: left;
+    font-size: 24px;
+    color: var(--purple-50);
+    font-family: var(--font-manrope);
+}
 `;
 
 
@@ -120,7 +198,6 @@ const Footer = () => {
                             <Image2Icon1 alt="" src={TelegramImage} />
                         </Button>
                     </CustomLink>
-
                 </ButtonsContainer2>
                 <ButtonsContainer3>
                     <CustomLink><TextButton3>Главная</TextButton3></CustomLink>

@@ -14,6 +14,10 @@ position: relative;
 font-size: var(--font-size-lg);
 line-height: 150%;
 color: var(--grey-30);
+
+@media (max-width:1200px){
+
+}
 `;
 const TextContainer1 = styled.div`align-self: stretch;
 display: flex;
@@ -22,6 +26,20 @@ align-items: center;
 justify-content: flex-start;
 padding: 0px 300px;
 gap: 6px;
+
+@media (max-width:1200px){
+padding: 0;
+}
+
+@media (max-width:768px){
+    padding: 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+}
 `;
 const ImageIcon = styled.img`align-self: stretch;
 position: relative;
@@ -32,6 +50,10 @@ height: 311px;
 flex-shrink: 0;
 object-fit: cover;
 z-index: 0;
+
+@media (max-width:1200px){
+
+}
 `;
 const ImageIcon1 = styled.img`flex: 1;
 position: relative;
@@ -40,6 +62,10 @@ max-width: 100%;
 overflow: hidden;
 height: 68px;
 object-fit: cover;
+
+@media (max-width:1200px){
+
+}
 `;
 const SubContainer4 = styled.div`align-self: stretch;
 display: flex;
@@ -48,12 +74,20 @@ align-items: flex-start;
 justify-content: flex-start;
 gap: var(--gap-xl);
 z-index: 1;
+
+@media (max-width:1200px){
+
+}
 `;
 const Icon2 = styled.img`position: relative;
 width: 24px;
 height: 24px;
 overflow: hidden;
 flex-shrink: 0;
+
+@media (max-width:1200px){
+
+}
 `;
 const Button = styled.div`margin: 0 !important;
 position: absolute;
@@ -68,6 +102,10 @@ align-items: flex-start;
 justify-content: flex-start;
 padding: var(--padding-3xs);
 z-index: 2;
+
+@media (max-width:1200px){
+
+}
 `;
 const Container6 = styled.div`align-self: stretch;
 display: flex;
@@ -76,8 +114,13 @@ align-items: flex-start;
 justify-content: flex-start;
 position: relative;
 gap: var(--gap-xl);
+
+@media (max-width:1200px){
+
+}
 `;
-const Card = styled.div`flex: 1;
+const Card = styled.div`
+flex: 1;
 border-radius: var(--br-xs);
 background-color: var(--peach-96);
 display: flex;
@@ -86,13 +129,34 @@ align-items: flex-start;
 justify-content: flex-start;
 padding: var(--padding-31xl);
 gap: var(--gap-11xl);
+
+@media (max-width:1200px){
+    align-self: stretch;
+}
+
+@media (max-width:768px){
+
+}
 `;
-const SubContainer3 = styled.div`align-self: stretch;
+const SubContainer3 = styled.div`
+align-self: stretch;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 justify-content: flex-start;
 gap: var(--gap-11xl);
+
+@media (max-width:1200px){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media (max-width:768px){
+
+}
 `;
 const Text1 = styled.div`position: relative;
 line-height: 150%;
@@ -107,6 +171,10 @@ justify-content: flex-start;
 padding: 18px 24px;
 font-size: var(--font-size-lg);
 color: var(--peach-99);
+
+@media (max-width:1200px){
+
+}
 `;
 const Container5 = styled.div`align-self: stretch;
 display: flex;
@@ -116,6 +184,17 @@ justify-content: flex-start;
 gap: 50px;
 text-align: left;
 font-size: var(--font-size-xl);
+
+@media (max-width:768px){
+align-self: stretch;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+gap: var(--gap-21xl);
+text-align: left;
+font-size: var(--font-size-xl);
+}
 `;
 const Container4 = styled.div`width: 1200px;
 display: flex;
@@ -123,6 +202,24 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 gap: 80px;
+
+@media (max-width:1200px){
+width: 768px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: var(--gap-21xl);
+}
+
+@media (max-width:768px){
+width: 320px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: var(--gap-21xl);
+}
 `;
 const MyProjectsSection1Root = styled.div`position: relative;
 width: 100%;
@@ -136,6 +233,38 @@ font-size: 48px;
 color: var(--grey-20);
 font-family: var(--font-manrope);
 margin: 100px 0;
+
+@media (max-width:1200px){
+    position: relative;
+width: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px 128px;
+box-sizing: border-box;
+text-align: center;
+font-size: 40px;
+color: var(--grey-20);
+font-family: var(--font-manrope);
+}
+
+@media (max-width:768px){
+position: relative;
+width: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px 35px;
+box-sizing: border-box;
+text-align: center;
+font-size: 40px;
+color: var(--grey-20);
+font-family: var(--font-manrope);
+}
 `;
 
 
