@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CustomLink from "../../../components/link/Link";
 
 const Text5 = styled.div`
 position: relative;
@@ -143,6 +144,7 @@ flex-direction: row;
 align-items: center;
 justify-content: flex-start;
 padding: var(--padding-lg) 24px;
+cursor: pointer;
 
 @media (max-width: 1200px){
     border-radius: 8px;
@@ -411,6 +413,15 @@ margin-top: 100px;
 
 
 const MainPage__HeroSection = () => {
+    const handleDownload = () => {
+        // Создаем ссылку для скачивания
+        const link = document.createElement('a');
+        link.href = '../../assets/files/CV-SelikhovAlexander.pdf'; // Укажи путь к твоему PDF файлу
+        link.download = 'CV-Selikhov_Alexander.pdf'; // Укажи имя файла для скачивания
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <HeroSectionRoot>
             <Container2>
@@ -425,10 +436,15 @@ const MainPage__HeroSection = () => {
                         </TextContainer3>
                     </Container3>
                     <ButtonsContainer1>
-                        <Button>
+                        <Button onClick={handleDownload}>
                             <Text5>Скачать резюме</Text5>
                         </Button>
-                        <Text7>{`Просмотреть портфолио ->`}</Text7>
+                        <CustomLink
+                            to="/portfolio"
+                        >
+                            <Text7>{`Просмотреть портфолио ->`}
+                            </Text7>
+                        </CustomLink>
                     </ButtonsContainer1>
                 </SubContainer3>
                 <SubContainer5>
@@ -447,7 +463,7 @@ const MainPage__HeroSection = () => {
                         <Text8>Лет опыта работы</Text8>
                     </TextContainer5>
                 </SubContainer5>
-            
+
                 <MobileSubContainer1Root>
                     <MobileTextContainer2>
                         <MobileNumber>

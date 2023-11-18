@@ -81,11 +81,9 @@ const TimelineSection = () => {
                                                 <p className="fullstack">&nbsp;</p>
                                                 <p className="fullstack">Создается проект ведения финансовых моделей, которая автоматизирует и ускорит проверку и согласование финансовых моделей;</p>
                                                 <p className="fullstack">&nbsp;</p>
-                                                <p className="fullstack">Разработал frontend и backend внутреннего web-приложения на библиотеке dash (python);</p>
-                                                <p className="fullstack">&nbsp;</p>
                                                 <p className="fullstack">Автоматизировал функционал отдела казначейства с помощью Power Query;</p>
                                                 <p className="fullstack">&nbsp;</p>
-                                                <p className="fullstack">Проверка и создание десяток моделей в месяц</p>
+                                                <p className="fullstack">Проверка и создание десяток моделей в месяц;</p>
                                                 <p className="fullstack">&nbsp;</p>
                                                 <p className="fullstack">Обучил директоров всех отделов работе в web-приложении для контроля сотрудников и планирования работы отдела;</p>
                                             </div>
@@ -111,7 +109,9 @@ const TimelineSection = () => {
                                                 <p className="fullstack">&nbsp;</p>
                                                 <p className="fullstack">Обеспечено повышение качества подготовки плановой и отчетной документации центров поддержки экспорта;</p>
                                                 <p className="fullstack">&nbsp;</p>
-                                                <p className="fullstack">Обучение двух стажеров— Созданные презентации дня защиты центров поддержки экспорта;</p>
+                                                <p className="fullstack">Обучение двух стажеров;</p>
+                                                <p className="fullstack">&nbsp;</p>
+                                                <p className="fullstack">Созданные презентации дня защиты центров поддержки экспорта;</p>
                                                 <p className="fullstack">&nbsp;</p>
                                                 <p className="fullstack">Курирование деятельности 26 регионов поддержки экспорта;</p>
                                             </div>
@@ -277,7 +277,7 @@ const TimelineSection = () => {
                                     <Date3>Высшее образование (Бакалавр)</Date3>
                                 </DateWrapper>
                                 <Container15>
-                                    <TipIcon4 alt="" src="Tip.svg" />
+                                    <TipIcon4 alt="" src={TipUp} />
                                     <SubContainer11>
                                         <IconContainer11>
                                             <Icon>

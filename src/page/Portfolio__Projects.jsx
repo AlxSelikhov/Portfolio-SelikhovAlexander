@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Project1Image from '../assets/png/image/Project1.png'
 import Project2Image from '../assets/png/image/Project2.png'
 import LinkIcon from '../assets/svg/icon/Link.svg'
+import CustomLink from "../components/link/Link";
 // import ArrowLeftIcon from '../assets/svg/icon/ArrowLeft.svg'
 // import ArrowRightIcon from '../assets/svg/icon/ArrowRight.svg'
 
@@ -79,7 +80,7 @@ flex-shrink: 0;
 const Button2 = styled.div`margin: 0 !important;
 position: absolute;
 right: 10px;
-bottom: 98px;
+bottom: 115px;
 border-radius: var(--br-5xs);
 background-color: var(--peach-96);
 border: 1px solid var(--peach-90);
@@ -260,7 +261,7 @@ const PortfolioExample = () => {
                     </Container6>
                     <Container7>
                         <Card>
-                            <Heading1>Z - Aura Perfume Website Design</Heading1>
+                            <Heading1>DnDoverlord</Heading1>
                             <Container8>
                                 <ImageIcon alt="" src={Project1Image} />
                                 <SubContainer4>
@@ -269,13 +270,17 @@ const PortfolioExample = () => {
                                     <ImageIcon1 alt="" src={Project1Image} />
                                     <ImageIcon1 alt="" src={Project1Image} />
                                 </SubContainer4>
-                                <Button2>
-                                    <Icon6 alt="" src={LinkIcon} />
-                                </Button2>
+                                <CustomLink
+                                    to="http://dndoverlord.ru/"
+                                >
+                                    <Button2>
+                                        <Icon6 alt="" src={LinkIcon} />
+                                    </Button2>
+                                </CustomLink>
                             </Container8>
                         </Card>
                         <Card>
-                            <Heading1>Forhelp Charity Website Design</Heading1>
+                            <Heading1>Food Diary</Heading1>
                             <Container8>
                                 <ImageIcon alt="" src={Project2Image} />
                                 <SubContainer4>
@@ -284,9 +289,14 @@ const PortfolioExample = () => {
                                     <ImageIcon1 alt="" src={Project2Image} />
                                     <ImageIcon1 alt="" src={Project2Image} />
                                 </SubContainer4>
-                                <Button2>
-                                    <Icon6 alt="" src={LinkIcon} />
-                                </Button2>
+                                <CustomLink
+                                    to="https://github.com/AlxSelikhov/FoodDiary"
+                                >
+                                    <Button2>
+                                        <Icon6 alt="" src={LinkIcon} />
+                                    </Button2>
+                                </CustomLink>
+
                             </Container8>
                         </Card>
                     </Container7>

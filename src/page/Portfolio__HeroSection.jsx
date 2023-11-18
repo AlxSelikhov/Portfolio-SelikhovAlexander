@@ -223,7 +223,7 @@ const Portfolio_Hero = () => {
                 </IconContainer1>
                 <TextContainer1>
                     <Heading>Мои творческие портфолио</Heading>
-                    <Paragraph>Некоторые проекты, которые я создал:</Paragraph>
+                    <Paragraph>Некоторые проекты, которые я сделал:</Paragraph>
                 </TextContainer1>
                 <SubContainer1>
                     <Container4>

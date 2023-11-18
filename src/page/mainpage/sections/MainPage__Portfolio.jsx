@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Project1 from '../../../assets/png/image/Project1.png';
 import Project2 from '../../../assets/png/image/Project2.png';
 import LinkIcon from '../../../assets/svg/icon/Link.svg';
+import CustomLink from "../../../components/link/Link";
 
 const Heading = styled.div`align-self: stretch;
 position: relative;
@@ -92,7 +93,7 @@ flex-shrink: 0;
 const Button = styled.div`margin: 0 !important;
 position: absolute;
 right: 10px;
-bottom: 98px;
+bottom: 115px;
 border-radius: var(--br-5xs);
 background-color: var(--peach-96);
 border: 1px solid var(--peach-90);
@@ -279,7 +280,7 @@ const MyProjectsSection = () => {
                 <Container5>
                     <SubContainer3>
                         <Card>
-                            <Heading>Z - Aura Perfume Website Design</Heading>
+                            <Heading>DnDoverlord</Heading>
                             <Container6>
                                 <ImageIcon alt="" src={Project1} />
                                 <SubContainer4>
@@ -288,13 +289,17 @@ const MyProjectsSection = () => {
                                     <ImageIcon1 alt="" src={Project1} />
                                     <ImageIcon1 alt="" src={Project1} />
                                 </SubContainer4>
-                                <Button>
-                                    <Icon2 alt="" src={LinkIcon} />
-                                </Button>
+                                <CustomLink
+                                    to="http://dndoverlord.ru/"
+                                >
+                                    <Button>
+                                        <Icon2 alt="" src={LinkIcon} />
+                                    </Button>
+                                </CustomLink>
                             </Container6>
                         </Card>
                         <Card>
-                            <Heading>Forhelp Charity Website Design</Heading>
+                            <Heading>Food Diary</Heading>
                             <Container6>
                                 <ImageIcon alt="" src={Project2} />
                                 <SubContainer4>
@@ -303,15 +308,23 @@ const MyProjectsSection = () => {
                                     <ImageIcon1 alt="" src={Project2} />
                                     <ImageIcon1 alt="" src={Project2} />
                                 </SubContainer4>
-                                <Button>
-                                    <Icon2 alt="" src={LinkIcon} />
-                                </Button>
+                                <CustomLink
+                                    to="https://github.com/AlxSelikhov/FoodDiary"
+                                >
+                                    <Button>
+                                        <Icon2 alt="" src={LinkIcon} />
+                                    </Button>
+                                </CustomLink>
+
                             </Container6>
                         </Card>
                     </SubContainer3>
-                    <Button2>
-                        <Text1>{`Посмотреть все проекты ->`}</Text1>
-                    </Button2>
+                    <CustomLink
+                        to="/portfolio"
+                    ><Button2>
+                            <Text1>{`Посмотреть все проекты ->`}</Text1>
+                        </Button2>
+                    </CustomLink>
                 </Container5>
             </Container4>
         </MyProjectsSection1Root>);

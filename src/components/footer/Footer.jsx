@@ -200,9 +200,9 @@ const Footer = () => {
                     </CustomLink>
                 </ButtonsContainer2>
                 <ButtonsContainer3>
-                    <CustomLink><TextButton3>Главная</TextButton3></CustomLink>
-                    <CustomLink><TextButton3>Обо мне</TextButton3></CustomLink>
-                    <CustomLink><TextButton3>Портфолио</TextButton3></CustomLink>
+                    <CustomLink to="/"><TextButton3>Главная</TextButton3></CustomLink>
+                    <CustomLink to="/aboutme"><TextButton3>Обо мне</TextButton3></CustomLink>
+                    <CustomLink to="/portfolio"><TextButton3>Портфолио</TextButton3></CustomLink>
                 </ButtonsContainer3>
             </Container2>
             <Container3>
