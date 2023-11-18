@@ -265,6 +265,7 @@ text-align: center;
 font-size: 40px;
 color: var(--grey-20);
 font-family: var(--font-manrope);
+margin: 60px 0;
 }
 `;
 
@@ -322,7 +323,7 @@ const MyProjectsSection = () => {
                     <CustomLink
                         to="/portfolio"
                     ><Button2>
-                            <Text1>{`Посмотреть все проекты ->`}</Text1>
+                            <Text1>{`Посмотреть все проекты`}</Text1>
                         </Button2>
                     </CustomLink>
                 </Container5>

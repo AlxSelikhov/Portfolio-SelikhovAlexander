@@ -239,6 +239,7 @@ text-align: left;
 font-size: var(--font-size-xl);
 color: var(--grey-20);
 font-family: var(--font-manrope);
+margin: 60px 0;
 }
 `;
 
@@ -249,7 +250,7 @@ const PortfolioExample = () => {
             <Container5>
                 <SubContainer3>
                     <Container6>
-                        <Heading>Проекты, реализованные в 2023 году</Heading>
+                        <Heading>Pet-проекты, реализованные в 2023 году:</Heading>
                         {/* <ButtonsContainer1>
                             <Button>
                                 <Icon4 alt="" src={ArrowLeftIcon} />

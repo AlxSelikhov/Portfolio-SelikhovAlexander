@@ -210,6 +210,7 @@ font-family: var(--font-manrope);
     font-size: 36px;
     color: var(--grey-20);
     font-family: var(--font-manrope);
+    margin-top: 60px;
 }
 `;
 

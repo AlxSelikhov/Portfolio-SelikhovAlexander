@@ -257,6 +257,7 @@ text-align: left;
 font-size: var(--font-size-sm);
 color: var(--grey-20);
 font-family: var(--font-manrope);
+margin-top: 60px;
 }
 `;
 

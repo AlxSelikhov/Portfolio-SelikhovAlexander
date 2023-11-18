@@ -15,7 +15,7 @@ import TipUp from '../assets/svg/icon/TipUp.svg';
 const TimelineSection = () => {
     return (
         <>
-            <div className="timelinesection">
+            <div className="timelinesection"> 
                 <div className="timelinesection1">
                     <div className="timelinesection-text-container">
                         <div className="heading">Основные вехи моей карьеры</div>
@@ -28,7 +28,7 @@ const TimelineSection = () => {
                             </div>
                             <div className="container">
                                 <div className="text-container">
-                                    <div className="text">Now</div>
+                                    <div className="text">Сейчас</div>
                                 </div>
                                 <div className="sub-container1">
                                     <div className="container1">
@@ -316,7 +316,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-margin: 100px 0 60px 0;
+margin: 0 0 60px 0;
 `;
 const ProgressLineBackground1 = styled.div`position: absolute;
 margin: 0 !important;
@@ -633,6 +633,7 @@ text-align: center;
 font-size: 28px;
 color: var(--grey-20);
 font-family: var(--font-manrope);
+margin: 100px 0;
 
 @media(max-width:768px){
     position: relative;
@@ -648,6 +649,7 @@ text-align: center;
 font-size: 28px;
 color: var(--grey-20);
 font-family: var(--font-manrope);
+margin: 60px 0;
 }
 
 @media (min-width:1200px){
