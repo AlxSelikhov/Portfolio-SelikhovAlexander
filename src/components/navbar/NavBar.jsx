@@ -6,6 +6,7 @@ import CustomLink from "../link/Link";
 
 import BurgerMenu from '../../assets/svg/icon/BurgerMenu.svg';
 import CloseIcon from '../../assets/svg/icon/CloseIcon.svg';
+import { Link } from 'react-router-dom';
 
 
 const SelikhovAlexander = styled.div`position: relative;
@@ -134,8 +135,9 @@ const Navbar = () => {
             <Container1>
                 <ButtonsContainer1>
                     <CustomNavLink to='/'>Главная</CustomNavLink>
-                    <CustomNavLink to='/aboutme'>Обо мне</CustomNavLink>
-                    <CustomNavLink to='/portfolio'>Портфолио</CustomNavLink>
+                    <a href='/#about-me' style={{ "text-decoration": "none", "color": "currentColor" }}>Обо мне</a>
+                    <a href='/#skills' style={{ "text-decoration": "none", "color": "currentColor" }}>Мои навыки</a>
+                    <a href='/#projects' style={{ "text-decoration": "none", "color": "currentColor" }}>Проекты</a>
                 </ButtonsContainer1>
                 <Button1 onClick={handleDownload}>
                     <Text2>Скачать резюме</Text2>
@@ -162,8 +164,9 @@ const Navbar = () => {
                                 <Modalpagesubcontainer>
                                     <ModalpagebuttonsContainer>
                                         <div onClick={closeModal}><CustomNavLink to='/' >Главная</CustomNavLink></div>
-                                        <div onClick={closeModal}><CustomNavLink to='/aboutme'>Обо мне</CustomNavLink></div>
-                                        <div onClick={closeModal}><CustomNavLink to='/portfolio'>Портфолио</CustomNavLink></div>
+                                        <div onClick={closeModal}><a href='/#about-me' style={{ "text-decoration": "none", "color": "currentColor" }}>Обо мне</a></div>
+                                        <div onClick={closeModal}><a href='/#skills' style={{ "text-decoration": "none", "color": "currentColor" }}>Мои навыки</a></div>
+                                        <div onClick={closeModal}><a href='/#projects' style={{ "text-decoration": "none", "color": "currentColor" }}>Проекты</a></div>
                                     </ModalpagebuttonsContainer>
                                     <Modalpagebutton1 onClick={handleDownload}>
                                         <ModalpagetextButton>Скачать резюме</ModalpagetextButton>
@@ -223,7 +226,7 @@ const Modalpagebutton1 = styled.div`border-radius: var(--br-5xs);
                     color: var(--peach-99);
                     cursor: pointer;
                     `;
-const Modalpagesubcontainer = styled.div`height: 279px;
+const Modalpagesubcontainer = styled.div`height: 290px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;

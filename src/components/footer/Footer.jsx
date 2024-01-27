@@ -49,10 +49,11 @@ font-weight: 500;
 font-size: 14px;
 }
 `;
-const ButtonsContainer3 = styled.div`margin: 0 !important;
+const ButtonsContainer3 = styled.div`
+margin: 0 !important;
 position: absolute;
 top: calc(50% - 13px);
-left: calc(50% - 152px);
+left: calc(50% - 165px);
 display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -78,12 +79,17 @@ color: var(--grey-20);
 font-family: var(--font-manrope);
 }
 `;
-const Container2 = styled.div`align-self: stretch;
+const Container2 = styled.div`
+width: 100%;
+position: relative;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-position: relative;
+text-align: left;
+font-size: 24px;
+color: var(--purple-50);
+font-family: var(--font-manrope);
 
 @media (max-width:1200px){
 align-self: stretch;
@@ -200,9 +206,10 @@ const Footer = () => {
                     </CustomLink>
                 </ButtonsContainer2>
                 <ButtonsContainer3>
-                    <CustomLink to="/"><TextButton3>Главная</TextButton3></CustomLink>
-                    <CustomLink to="/aboutme"><TextButton3>Обо мне</TextButton3></CustomLink>
-                    <CustomLink to="/portfolio"><TextButton3>Портфолио</TextButton3></CustomLink>
+                    <CustomLink to="/">Главная</CustomLink>
+                    <a href='/#about-me' style={{ "text-decoration": "none", "color": "currentColor" }}>Обо мне</a>
+                    <a href='/#skills' style={{ "text-decoration": "none", "color": "currentColor" }}>Мои навыки</a>
+                    <a href='/#projects' style={{ "text-decoration": "none", "color": "currentColor" }}>Проекты</a>
                 </ButtonsContainer3>
             </Container2>
             <Container3>

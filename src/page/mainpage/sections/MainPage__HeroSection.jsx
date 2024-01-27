@@ -427,24 +427,26 @@ const MainPage__HeroSection = () => {
             <Container2>
                 <SubContainer3>
                     <Container3>
-                        <SubContainer4>
+                        {/* <SubContainer4>
                             <Text5>Всем привет 🤗</Text5>
-                        </SubContainer4>
+                        </SubContainer4> */}
                         <TextContainer3>
-                            <Heading>Селихов Александр приветствует вас!</Heading>
-                            <Paragraph>Я - преданный и опытный frontend разработчик, стремящийся создавать визуально привлекательные и высокофункциональные веб-приложения. Изучите мои проекты, чтобы увидеть, как эффективно я применяю свои навыки в разработке пользовательского интерфейса.</Paragraph>
+                            <Heading>Frontend React Developer 👋</Heading>
+                            <Paragraph>
+                                Привет! Меня зовут Селихов Александр и я преданный и опытный frontend разработчик, стремящийся создавать визуально привлекательные и высокофункциональные веб-приложения.
+                                Изучите мои проекты, чтобы увидеть, как эффективно я применяю свои навыки в разработке пользовательского интерфейса.
+                            </Paragraph>
                         </TextContainer3>
                     </Container3>
                     <ButtonsContainer1>
                         <Button onClick={handleDownload}>
                             <Text5>Скачать резюме</Text5>
                         </Button>
-                        <CustomLink
-                            to="/portfolio"
-                        >
-                            <Text7>{`Просмотреть портфолио`}
+                        <a href="/#projects" style={{"text-decoration": "none", "color": "currentColor"}}>
+                            <Text7>
+                                Просмотреть проекты
                             </Text7>
-                        </CustomLink>
+                        </a>
                     </ButtonsContainer1>
                 </SubContainer3>
                 <SubContainer5>
@@ -453,11 +455,11 @@ const MainPage__HeroSection = () => {
                             <Span2>5</Span2>
                             <Span>+</Span>
                         </Number1>
-                        <Text8>Завершенных проектов (commercial + pet)</Text8>
+                        <Text8>Завершенных проектов</Text8>
                     </TextContainer4>
                     <TextContainer5>
                         <Number1>
-                            <Span2>01</Span2>
+                            <Span2>2</Span2>
                             <Span>+</Span>
                         </Number1>
                         <Text8>Лет опыта работы</Text8>
@@ -470,11 +472,11 @@ const MainPage__HeroSection = () => {
                             <MobileSpan2>5</MobileSpan2>
                             <MobileSpan>+</MobileSpan>
                         </MobileNumber>
-                        <MobileText2>Завершенных проектов (commercial + pet)</MobileText2>
+                        <MobileText2>Завершенных проектов</MobileText2>
                     </MobileTextContainer2>
                     <MobileTextContainer2>
                         <MobileNumber>
-                            <MobileSpan2>01</MobileSpan2>
+                            <MobileSpan2>2</MobileSpan2>
                             <MobileSpan>+</MobileSpan>
                         </MobileNumber>
                         <MobileText2>Лет опыта работы</MobileText2>

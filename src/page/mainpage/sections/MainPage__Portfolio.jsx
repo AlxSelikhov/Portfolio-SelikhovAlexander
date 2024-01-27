@@ -197,7 +197,8 @@ text-align: left;
 font-size: var(--font-size-xl);
 }
 `;
-const Container4 = styled.div`width: 1200px;
+const Container4 = styled.div`
+flex: 1;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -222,13 +223,16 @@ justify-content: center;
 gap: var(--gap-21xl);
 }
 `;
-const MyProjectsSection1Root = styled.div`position: relative;
+const MyProjectsSection1Root = styled.div`
 width: 100%;
+position: relative;
 overflow: hidden;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 justify-content: center;
+padding: 0px 120px;
+box-sizing: border-box;
 text-align: center;
 font-size: 48px;
 color: var(--grey-20);
@@ -272,7 +276,7 @@ margin: 60px 0;
 
 const MyProjectsSection = () => {
     return (
-        <MyProjectsSection1Root>
+        <MyProjectsSection1Root id="projects">
             <Container4>
                 <TextContainer1>
                     <Heading>Мои проекты</Heading>
@@ -320,12 +324,6 @@ const MyProjectsSection = () => {
                             </Container6>
                         </Card>
                     </SubContainer3>
-                    <CustomLink
-                        to="/portfolio"
-                    ><Button2>
-                            <Text1>{`Посмотреть все проекты`}</Text1>
-                        </Button2>
-                    </CustomLink>
                 </Container5>
             </Container4>
         </MyProjectsSection1Root>);

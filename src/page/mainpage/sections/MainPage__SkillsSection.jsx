@@ -174,7 +174,9 @@ gap: var(--gap-3xs);
 
 }
 `;
-const Card = styled.div`flex: 1;
+const Card = styled.div`
+align-self: stretch;
+flex: 1;
 border-radius: var(--br-xs);
 background-color: var(--peach-96);
 display: flex;
@@ -196,16 +198,15 @@ padding: var(--padding-31xl) 10px;
 gap: var(--gap-11xl);
 }
 `;
-const Card1 = styled.div`flex: 1;
+const Card1 = styled.div`align-self: stretch;
+flex: 1;
 border-radius: var(--br-xs);
 background-color: var(--peach-96);
-height: 361px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-padding: var(--padding-31xl) 0px;
-box-sizing: border-box;
+padding: var(--padding-31xl);
 gap: var(--gap-11xl);
 
 @media (max-width:768px){
@@ -337,7 +338,7 @@ gap: var(--gap-11xl);
 font-size: var(--font-size-5xl);
 }
 `;
-const Container2 = styled.div`width: 1198px;
+const Container2 = styled.div`flex: 1;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -363,11 +364,11 @@ justify-content: center;
 gap: 80px;
 }
 `;
-const SkillsSectionRoot = styled.div`position: relative;
-width: 100%;
+const SkillsSectionRoot = styled.div`width: 100%;
+position: relative;
 overflow: hidden;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 justify-content: center;
 padding: 0px 120px;
@@ -413,7 +414,7 @@ margin-top: 100px;
 
 const SkillsSection = () => {
     return (
-        <SkillsSectionRoot>
+        <SkillsSectionRoot id="skills">
             <Container2>
                 <TextContainer6>
                     <HeadingContainer>Мои Навыки</HeadingContainer>
@@ -423,45 +424,36 @@ const SkillsSection = () => {
                     <SubContainer2>
                         <Card>
                             <IconContainer5>
-                                <Icon4 alt="" src={Skill1} />
+                                <Icon4 alt="" src={Skill3} />
                             </IconContainer5>
                             <TextContainer7>
-                                <Heading>Принципы frontend разработки</Heading>
-                                <Paragraph>Владение основными принципами frontend разработки, такими как HTML-верстка, CSS-стилизация, JavaScript-интерактивность и оптимизация пользовательского интерфейса.</Paragraph>
+                                <Heading>Языки программирования</Heading>
+                                <Paragraph>
+                                    JavaScript, TypeScript, HTML, CSS
+                                </Paragraph>
                             </TextContainer7>
                         </Card>
                         <Card1>
                             <IconContainer5>
-                                <Icon4 alt="" src={Skill2} />
+                                <Icon4 alt="" src={Skill4} />
                             </IconContainer5>
                             <TextContainer7>
-                                <Heading>Адаптивный дизайн</Heading>
-                                <Paragraph>Мои знания  позволяют создавать адаптивные интерфейсы, которые легко функционируют на различных устройствах .</Paragraph>
+                                <Heading>Библиотеки</Heading>
+                                <Paragraph>
+                                    React, Redux/MobX, Axios, React-Router, Webpack, ESLint
+                                </Paragraph>
                             </TextContainer7>
                         </Card1>
                     </SubContainer2>
                     <SubContainer3>
                         <Card2>
                             <IconContainer5>
-                                <Icon4 alt="" src={Skill3} />
+                                <Image1Icon1 alt="" src={Skill2} />
                             </IconContainer5>
                             <TextContainer7>
-                                <Heading>Языки программирования</Heading>
-                                <Paragraph3>
-                                    <Frontend>Frontend  : JS, Typescript, HTML, CSS</Frontend>
-                                    <Frontend>Backend:  Python</Frontend>
-                                </Paragraph3>
-                            </TextContainer7>
-                        </Card2>
-                        <Card2>
-                            <IconContainer5>
-                                <Image1Icon1 alt="" src={Skill4} />
-                            </IconContainer5>
-                            <TextContainer7>
-                                <Heading>Библиотеки</Heading>
+                                <Heading>Адаптивный дизайн</Heading>
                                 <Paragraph>
-                                    <Frontend>{`Frontend: React.js, Axios, React-Router; `}</Frontend>
-                                    <Frontend>Backend: FastAPI, Dash, Pundas, Numpy;</Frontend>
+                                    <Frontend>Мои знания  позволяют создавать адаптивные интерфейсы, которые легко функционируют на различных устройствах .</Frontend>
                                 </Paragraph>
                             </TextContainer7>
                         </Card2>
@@ -472,8 +464,9 @@ const SkillsSection = () => {
                             <TextContainer7>
                                 <Heading>UI-библиотеки</Heading>
                                 <Paragraph>
-                                    <Frontend>Ant Design, MUI,</Frontend>
-                                    <Frontend>Styled components</Frontend>
+                                    <Frontend>
+                                        Ant Design, MUI, Styled components
+                                    </Frontend>
                                 </Paragraph>
                             </TextContainer7>
                         </Card2>

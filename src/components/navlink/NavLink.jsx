@@ -26,19 +26,19 @@ const StyledNavLink = styled(NavLink)`
     text-align: left;
     text-decoration: none;
 
-&.active {
-    border-radius: 8px;
-    background-color: var(--peach-95);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 14px 24px;
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 18px;
-    color: var(--grey-20);
-    font-family: var(--font-manrope);
-    text-decoration: none;
-}
+// &.active {
+//     border-radius: 8px;
+//     background-color: var(--peach-95);
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+//     justify-content: flex-start;
+//     padding: 14px 24px;
+//     box-sizing: border-box;
+//     text-align: left;
+//     font-size: 18px;
+//     color: var(--grey-20);
+//     font-family: var(--font-manrope);
+//     text-decoration: none;
+// }
 `; 
